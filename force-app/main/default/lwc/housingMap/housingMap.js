@@ -6,7 +6,7 @@ export default class HousingMap extends LightningElement {
     @wire(getHouses)
     wiredHouses({ error, data }) {
         if (data) {
-    // We are using Javascript Map function to transform the
+    // We are using Javascript Map function to transform 
       this.mapMarkers = data.map((element) => {
         return {
           location: {
